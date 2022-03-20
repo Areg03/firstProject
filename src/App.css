@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+.app {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1.7fr 14fr 2fr;
+  grid-gap: 2px;
+  grid-template-areas: "h h" "n m" "f f"; }
+
+header {
+  align-items: center;
+  padding: 1px;
+  position: relative;
+  font-family: cursive;
+  font-size: 72px;
+  grid-area: h;
+  background: linear-gradient(#1d1d1d, #353131);
+  border-radius: 0 0 15px 15px;
+  color: #9daa95;
+  text-align: center; }
+  header div {
+    display: inline-block; }
+  header .log {
+    float: right;
+    font-size: large; }
+    header .log a {
+      color: white; }
+
+nav {
+  grid-area: n;
+  text-align: center;
+  background-color: #353131;
+  border-radius: 15px;
+  font-size: 30px; }
+  nav a {
+    text-decoration: none; }
+  nav div {
+    margin-bottom: 20px; }
+
+main, .aboutme, .preloader, .users, .profiles, .login {
+  overflow-y: auto;
+  overflow-x: auto;
+  grid-area: m;
+  background-color: #9daa95;
+  border-radius: 15px;
+  border: 1px solid #9daa95;
+  text-align: center;
+  color: black; }
+
+main img, .aboutme img {
+  float: left;
+  border-radius: 15px 0 15px 0;
+  width: 45%;
+  height: 90%; }
+
+.aboutme {
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 3.5fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas: "i c" "t c"; }
+  .aboutme img {
+    grid-area: i;
+    width: 450px; }
+  .aboutme .textarea {
+    grid-area: t;
+    max-width: 200px;
+    max-height: 100px; }
+    .aboutme .textarea textarea {
+      max-width: 200px;
+      max-height: 100px;
+      min-width: 200px;
+      min-height: 100px; }
+  .aboutme .button {
+    float: right;
+    max-width: 200px;
+    max-height: 100px; }
+    .aboutme .button button {
+      max-width: 80px;
+      max-height: 30px;
+      min-width: 80px;
+      min-height: 29px;
+      height: 100px;
+      display: block; }
+  .aboutme .text {
+    grid-area: c;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-style: oblique;
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center; }
+    .aboutme .text p {
+      word-wrap: break-word;
+      width: 700px;
+      text-align: left; }
+
+.preloader img {
+  width: 100px;
+  height: 100px; }
+
+.users {
+  z-index: 1; }
+  .users .pages {
+    cursor: pointer;
+    margin: 20px; }
+  .users .main {
+    float: left; }
+  .users .selectedPage {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0.8px; }
+  .users .nullPage {
+    margin: 3px; }
+    .users .nullPage:hover {
+      font-weight: bold; }
+  .users img {
+    width: 60px;
+    height: 60px; }
+
+.profiles img {
+  width: 100px;
+  height: 100px; }
+
+.avatar {
+  position: relative;
+  left: 65px;
+  margin-top: 2px; }
+  .avatar input {
+    color: #9daa95; }
+
+.err {
+  color: red; }
+
+footer {
+  position: relative;
+  grid-area: f;
+  background-color: #353131;
+  background: linear-gradient(to top, #1f1f1f, #353131);
+  text-align: center;
+  border-radius: 15px 15px 0 0; }
+  footer .copyright {
+    text-align: right;
+    font-style: oblique;
+    font-size: 13px;
+    position: relative;
+    top: 57px;
+    right: 2px;
+    bottom: 0;
+    color: #607210; }
+
+/*# sourceMappingURL=App.css.map */
